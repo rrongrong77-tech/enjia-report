@@ -1,0 +1,5 @@
+*.pyc
+__pycache__
+.netlify_*
+build_site.py.bak
+*.zip
