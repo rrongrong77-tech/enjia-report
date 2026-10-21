@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>恩加数据汇总日报</title>
+<title>昭屿数据汇总日报</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 <style>
@@ -79,7 +79,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei
 <body>
 <div class="pwd-overlay" id="pwdGate">
   <div class="pwd-box">
-    <h2>🔐 恩加数据汇总日报</h2>
+    <h2>🔐 昭屿数据汇总日报</h2>
     <div class="sub">请输入访问密码</div>
     <input type="password" id="pwdInput" placeholder="输入密码" onkeydown="if(event.key==='Enter')checkPwd()" autofocus>
     <div class="err" id="pwdErr">密码错误，请重试</div>
@@ -104,7 +104,7 @@ function checkPwd(){
 
 
 <div class="toolbar">
-  <h1>📊 恩加数据汇总日报</h1>
+  <h1>📊 昭屿数据汇总日报</h1>
   <div class="right">
     <span class="updated-at" id="saveBadge">📅 更新于 10/22 01:51</span>
     <button class="reset-btn" onclick="resetData()">🔄 重置数据</button>
@@ -475,7 +475,7 @@ function exportExcel(){
   var ws=XLSX.utils.aoa_to_sheet(clean);
   var wb=XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb,ws,currentSheet);
-  XLSX.writeFile(wb,'恩加数据_'+currentSheet+'.xlsx');
+  XLSX.writeFile(wb,'昭屿数据_'+currentSheet+'.xlsx');
 }
 
 render();
